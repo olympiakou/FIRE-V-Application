@@ -1,7 +1,7 @@
 "use strict";
 const $=id=>document.getElementById(id);
 let map,cfg,meta={},tiles={},active=[],outlines={},lookup=null,studyBounds=null;
-const st={theme:"ndvi",date:"20260727",fireDisplay:"classes",opacity:0,
+const st={theme:"ndvi",date:"20260727",fireDisplay:"classes",opacity:0.8,
           fireClasses:new Set(["4","5","6","7"]),landcover:new Set(),burn:true,settlements:true};
 function error(msg){$("error").hidden=false;$("error").textContent=String(msg);console.error(msg)}
 function appendText(parent,tag,text,cls=""){const el=document.createElement(tag);el.textContent=text;if(cls)el.className=cls;parent.append(el);return el}
