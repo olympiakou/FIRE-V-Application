@@ -1,0 +1,285 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.660835,
+          35.1484384
+        ]
+      },
+      "properties": {
+        "name": "Orne",
+        "name_el": "Ορνέ"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6324333,
+          35.1551347
+        ]
+      },
+      "properties": {
+        "name": "Krya Vrysi",
+        "name_el": "Κρύα Βρύση"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5171499,
+          35.1614693
+        ]
+      },
+      "properties": {
+        "name": "Kerames",
+        "name_el": "Κεραμές"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5820994,
+          35.1648648
+        ]
+      },
+      "properties": {
+        "name": "Akoumia",
+        "name_el": "Ακούμια"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7086452,
+          35.1722087
+        ]
+      },
+      "properties": {
+        "name": "Agios Ioannis",
+        "name_el": "Άγιος Ιωάννης"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6155054,
+          35.1216801
+        ]
+      },
+      "properties": {
+        "name": "Saktouria",
+        "name_el": "Σακτούρια"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6527416,
+          35.1267749
+        ]
+      },
+      "properties": {
+        "name": "Melampes",
+        "name_el": "Μέλαμπες"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6884306,
+          35.0977232
+        ]
+      },
+      "properties": {
+        "name": "Agia Galini",
+        "name_el": "Αγία Γαλήνη"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6276499,
+          35.1502665
+        ]
+      },
+      "properties": {
+        "name": "Nea Krya Vrysi",
+        "name_el": "Νέα Κρύα Βρύση"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.6535312,
+          35.0990658
+        ]
+      },
+      "properties": {
+        "name": "Agios Georgios",
+        "name_el": "Άγιος Γεώργιος"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5652339,
+          35.1031886
+        ]
+      },
+      "properties": {
+        "name": "Agios Pavlos",
+        "name_el": "Άγιος Παύλος"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.60771,
+          35.1237372
+        ]
+      },
+      "properties": {
+        "name": "Kato Saktouria",
+        "name_el": "Κάτω Σακτούρια"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.528939,
+          35.1564741
+        ]
+      },
+      "properties": {
+        "name": "Agalianos",
+        "name_el": "Αγαλιανός"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5153391,
+          35.1460142
+        ]
+      },
+      "properties": {
+        "name": "Agia Foteini",
+        "name_el": "Αγία Φωτεινή"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7191606,
+          35.1068057
+        ]
+      },
+      "properties": {
+        "name": "Xirokampos",
+        "name_el": "Ξηρόκαμπος"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5428154,
+          35.1376208
+        ]
+      },
+      "properties": {
+        "name": "Agia Paraskevi",
+        "name_el": "Αγία Παρασκευή"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7159112,
+          35.1184419
+        ]
+      },
+      "properties": {
+        "name": "Mandres",
+        "name_el": "Μάνδρες"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5759037,
+          35.1633344
+        ]
+      },
+      "properties": {
+        "name": "Vrysai",
+        "name_el": "Βρύσαι"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.7139159,
+          35.1555929
+        ]
+      },
+      "properties": {
+        "name": "Agia Paraskevi",
+        "name_el": "Αγία Παρασκευή"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.5579518,
+          35.122856
+        ]
+      },
+      "properties": {
+        "name": "Triopetra",
+        "name_el": "Τριόπετρα"
+      }
+    }
+  ]
+}

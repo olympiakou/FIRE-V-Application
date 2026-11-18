@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FIRE-V | Vegetation Monitoring & Fire Impact</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div><strong>FIRE-V</strong><span>Satellite-based Vegetation Monitoring &amp; Fire Impact Assessment</span></div>
+  <button id="about-toggle" type="button" class="quiet-button">About / Sources</button>
+</header>
+<div class="workspace">
+  <aside class="sidebar">
+    <h1>Map layers</h1>
+    <fieldset class="themes" aria-label="Thematic map">
+      <label><input name="theme" type="radio" value="ndvi" checked> Vegetation <small>NDVI</small></label>
+      <label><input name="theme" type="radio" value="ndmi"> Moisture <small>NDMI</small></label>
+      <label><input name="theme" type="radio" value="fire"> Fire impact <small>dNBR</small></label>
+    </fieldset>
+    <section id="fire-settings" hidden>
+      <h2>Display</h2>
+      <label class="option"><input type="radio" name="fire-display" value="classes" checked> Impact classes</label>
+      <label class="option"><input type="radio" name="fire-display" value="index"> dNBR index</label>
+      <div id="fire-classes" class="fire-classes"></div>
+    </section>
+    <section><h2>Land cover</h2>
+      <div id="landcover-controls" class="landcover-controls"></div>
+    </section>
+    <section><h2>Settlements</h2>
+      <label class="option"><input type="checkbox" id="settlements-toggle" checked> Show settlement names</label>
+    </section>
+    <section><h2>Boundary</h2>
+      <label class="option"><input type="checkbox" id="burn-outline" checked> Mapped fire area</label>
+    </section>
+    <section class="opacity-control"><label for="opacity">Map opacity <output id="opacity-number">90%</output></label>
+      <input id="opacity" type="range" min="30" max="100" value="90">
+    </section>
+    <div class="source-note">Sentinel-2 L2A · CORINE Land Cover 2018</div>
+  </aside>
+  <main class="map-space">
+    <div id="map" aria-label="Map of vegetation and fire impacts"></div>
+    <button type="button" id="fit-view" class="fit-view">Fit area</button>
+    <div id="timeline" class="timeline">
+      <div class="timeline-head"><span>Observation timeline</span><span id="selected-date">27 Jul 2026</span></div>
+      <div class="timeline-track" id="timeline-track"></div>
+    </div>
+    <div id="legend" class="legend" aria-live="polite"></div>
+    <div id="map-info" class="map-info" hidden aria-live="polite"></div>
+    <div id="error" class="error" hidden></div>
+  </main>
+</div>
+<div id="about-panel" class="about-backdrop" hidden><section class="about-dialog" role="dialog" aria-modal="true" aria-labelledby="about-title">
+ <button type="button" id="close-about" class="close-about">Close ×</button>
+ <h2 id="about-title">FIRE-V · About the map</h2>
+ <p>FIRE-V is a research prototype designed to visualise vegetation change and post-fire impacts using openly available satellite data.</p>
+ <p><b>Satellite observations:</b> 05 June, 07 July, 27 July and 04 August 2026. <b>Fire event:</b> 29 July 2026, Rethymno, Crete.</p>
+ <p><b>Map interpretation:</b> NDVI describes relative greenness; NDMI is a spectral moisture indicator and does not independently diagnose drought. dNBR describes change in surface spectral response after fire. Severity classes are illustrative and not field-validated damage estimates.</p>
+ <p><b>Data and limitations:</b> Sentinel-2 Level-2A; CORINE Land Cover 2018 (minimum mapping unit 25 ha). Mapped fire-affected area was derived using dNBR ≥ 0.10 and visual comparison, not an independently verified fire perimeter. The earlier satellite processing used an SCL 4/5 mask, potentially excluding some burned pixels. Land-cover overlay is indicative of 2018 mapping, not parcel-level 2026 inventory.</p>
+ <p>Area figures represent satellite-derived map estimates and are not verified assessments of agricultural losses.</p>
+ </section></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="js/app.js"></script>
+</body></html>

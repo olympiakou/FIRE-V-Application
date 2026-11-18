@@ -1,0 +1,519 @@
+{
+  "app": "FIRE-V",
+  "studyArea": "Rethymno, Crete",
+  "fireDate": "2026-07-29",
+  "dates": [
+    {
+      "id": "20260605",
+      "label": "05 Jun 2026",
+      "postfire": false
+    },
+    {
+      "id": "20260707",
+      "label": "07 Jul 2026",
+      "postfire": false
+    },
+    {
+      "id": "20260727",
+      "label": "27 Jul 2026",
+      "postfire": false
+    },
+    {
+      "id": "20260804",
+      "label": "04 Aug 2026",
+      "postfire": true
+    }
+  ],
+  "layers": [
+    {
+      "id": "ndvi_20260605",
+      "title": "Vegetation | 05 Jun 2026",
+      "url": "tiles/ndvi_20260605/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    },
+    {
+      "id": "ndmi_20260605",
+      "title": "Moisture | 05 Jun 2026",
+      "url": "tiles/ndmi_20260605/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    },
+    {
+      "id": "ndvi_20260707",
+      "title": "Vegetation | 07 Jul 2026",
+      "url": "tiles/ndvi_20260707/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    },
+    {
+      "id": "ndmi_20260707",
+      "title": "Moisture | 07 Jul 2026",
+      "url": "tiles/ndmi_20260707/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    },
+    {
+      "id": "ndvi_20260727",
+      "title": "Vegetation | 27 Jul 2026",
+      "url": "tiles/ndvi_20260727/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    },
+    {
+      "id": "ndmi_20260727",
+      "title": "Moisture | 27 Jul 2026",
+      "url": "tiles/ndmi_20260727/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    },
+    {
+      "id": "ndvi_20260804",
+      "title": "Vegetation | 04 Aug 2026",
+      "url": "tiles/ndvi_20260804/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    },
+    {
+      "id": "ndmi_20260804",
+      "title": "Moisture | 04 Aug 2026",
+      "url": "tiles/ndmi_20260804/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    },
+    {
+      "id": "severity",
+      "title": "Fire impact classes",
+      "url": "tiles/severity/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 46
+    },
+    {
+      "id": "fireclass_4",
+      "title": "Low",
+      "url": "tiles/fireclass_4/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 46
+    },
+    {
+      "id": "fireclass_5",
+      "title": "Moderate-low",
+      "url": "tiles/fireclass_5/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 46
+    },
+    {
+      "id": "fireclass_6",
+      "title": "Moderate-high",
+      "url": "tiles/fireclass_6/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 37
+    },
+    {
+      "id": "fireclass_7",
+      "title": "High",
+      "url": "tiles/fireclass_7/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 24
+    },
+    {
+      "id": "dnbr",
+      "title": "dNBR index",
+      "url": "tiles/dnbr/{z}/{x}/{y}.png",
+      "bounds": [
+        [
+          35.081720971464314,
+          24.508171000272437
+        ],
+        [
+          35.17289774148939,
+          24.72126096696744
+        ]
+      ],
+      "minZoom": 10,
+      "maxZoom": 14,
+      "tilesWritten": 77
+    }
+  ],
+  "severityClasses": [
+    {
+      "id": "4",
+      "name": "Low",
+      "range": "0.10–0.27",
+      "color": "#F5D850",
+      "areaKm2": 20.7696
+    },
+    {
+      "id": "5",
+      "name": "Moderate-low",
+      "range": "0.27–0.44",
+      "color": "#F49A43",
+      "areaKm2": 21.0964
+    },
+    {
+      "id": "6",
+      "name": "Moderate-high",
+      "range": "0.44–0.66",
+      "color": "#E85A32",
+      "areaKm2": 5.4252
+    },
+    {
+      "id": "7",
+      "name": "High",
+      "range": "≥ 0.66",
+      "color": "#C72232",
+      "areaKm2": 0.16
+    }
+  ],
+  "landcover": [
+    {
+      "code": 223,
+      "id": "223",
+      "name": "Olive groves",
+      "color": "#758A38",
+      "affectedKm2": 16.5428,
+      "studyKm2": 48.6756,
+      "nPolygons": 12
+    },
+    {
+      "code": 321,
+      "id": "321",
+      "name": "Natural grasslands",
+      "color": "#90BD64",
+      "affectedKm2": 10.3352,
+      "studyKm2": 24.1468,
+      "nPolygons": 10
+    },
+    {
+      "code": 323,
+      "id": "323",
+      "name": "Sclerophyllous vegetation",
+      "color": "#7D9760",
+      "affectedKm2": 7.2748,
+      "studyKm2": 18.0588,
+      "nPolygons": 26
+    },
+    {
+      "code": 243,
+      "id": "243",
+      "name": "Agriculture with natural vegetation",
+      "color": "#BAA776",
+      "affectedKm2": 6.2984,
+      "studyKm2": 18.6416,
+      "nPolygons": 19
+    },
+    {
+      "code": 242,
+      "id": "242",
+      "name": "Complex cultivation patterns",
+      "color": "#C9A465",
+      "affectedKm2": 2.85,
+      "studyKm2": 7.7204,
+      "nPolygons": 19
+    },
+    {
+      "code": 333,
+      "id": "333",
+      "name": "Sparsely vegetated areas",
+      "color": "#C9BD9A",
+      "affectedKm2": 2.1036,
+      "studyKm2": 14.278,
+      "nPolygons": 10
+    },
+    {
+      "code": 221,
+      "id": "221",
+      "name": "Vineyards",
+      "color": "#9D6DA6",
+      "affectedKm2": 1.106,
+      "studyKm2": 1.7556,
+      "nPolygons": 2
+    },
+    {
+      "code": 211,
+      "id": "211",
+      "name": "Non-irrigated arable land",
+      "color": "#E9CC72",
+      "affectedKm2": 0.4128,
+      "studyKm2": 0.54,
+      "nPolygons": 1
+    },
+    {
+      "code": 231,
+      "id": "231",
+      "name": "Pastures",
+      "color": "#AAD281",
+      "affectedKm2": 0.2984,
+      "studyKm2": 1.1676,
+      "nPolygons": 3
+    },
+    {
+      "code": 331,
+      "id": "331",
+      "name": "Beaches, dunes, sands",
+      "color": "#D6CAA8",
+      "affectedKm2": 0.108,
+      "studyKm2": 0.5296,
+      "nPolygons": 4
+    },
+    {
+      "code": 112,
+      "id": "112",
+      "name": "Discontinuous urban fabric",
+      "color": "#D78A86",
+      "affectedKm2": 0.0924,
+      "studyKm2": 0.77,
+      "nPolygons": 4
+    },
+    {
+      "code": 523,
+      "id": "523",
+      "name": "Sea and ocean",
+      "color": "#3C91BA",
+      "affectedKm2": 0.0176,
+      "studyKm2": 45.8892,
+      "nPolygons": 1
+    },
+    {
+      "code": 121,
+      "id": "121",
+      "name": "Industrial or commercial units",
+      "color": "#9A709D",
+      "affectedKm2": 0.0112,
+      "studyKm2": 0.7064,
+      "nPolygons": 4
+    }
+  ],
+  "estimatedBurnKm2": 47.45,
+  "clickRaster": {
+    "url": "data/severity_lookup.png",
+    "boundsMercator": [
+      2728237.116024802,
+      4174992.2507163743,
+      2751958.182610445,
+      4187402.1505842665
+    ],
+    "width": 960,
+    "height": 483
+  },
+  "legends": {
+    "ndvi": [
+      {
+        "value": -0.1,
+        "color": "#9E8A70"
+      },
+      {
+        "value": 0.2,
+        "color": "#E4D7A1"
+      },
+      {
+        "value": 0.3,
+        "color": "#CBDDA5"
+      },
+      {
+        "value": 0.4,
+        "color": "#9ACB82"
+      },
+      {
+        "value": 0.6,
+        "color": "#48A459"
+      },
+      {
+        "value": 0.85,
+        "color": "#086C32"
+      }
+    ],
+    "ndmi": [
+      {
+        "value": -0.3,
+        "color": "#A5482E"
+      },
+      {
+        "value": -0.15,
+        "color": "#E89A48"
+      },
+      {
+        "value": 0,
+        "color": "#F4DF7E"
+      },
+      {
+        "value": 0.15,
+        "color": "#72B88B"
+      },
+      {
+        "value": 0.3,
+        "color": "#117B70"
+      }
+    ],
+    "dnbr": [
+      {
+        "value": -0.1,
+        "color": "#4F9F8D"
+      },
+      {
+        "value": 0.1,
+        "color": "#E3E7C9"
+      },
+      {
+        "value": 0.27,
+        "color": "#F7D94C"
+      },
+      {
+        "value": 0.44,
+        "color": "#F58D38"
+      },
+      {
+        "value": 0.66,
+        "color": "#E53935"
+      },
+      {
+        "value": 0.7,
+        "color": "#9E082A"
+      }
+    ]
+  },
+  "methodNote": "Preliminary satellite-derived estimates. Fire footprint: dNBR >=0.10, visually selected; not field validated. CORINE Land Cover 2018 (MMU 25ha); analysis restricted by SCL 4/5 mask."
+}
