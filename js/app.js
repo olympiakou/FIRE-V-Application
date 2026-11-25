@@ -147,13 +147,17 @@ async function start(){if(typeof L==="undefined")throw Error("Leaflet is unavail
  const response=await fetch("data/layers.json",{cache:"no-store"});if(!response.ok)throw Error("Missing layers.json; run Script 08 v3 first");
  cfg=await response.json();cfg.layers.forEach(layer=>meta[layer.id]=layer);
  map=L.map("map",{minZoom:9,maxZoom:17,zoomControl:false});L.control.zoom({position:"topright"}).addTo(map);
+ // Explicit pane order keeps either basemap below FIRE-V data layers.
+ map.createPane("firev-basemap");map.getPane("firev-basemap").style.zIndex=200;
+ map.createPane("firev-indices");map.getPane("firev-indices").style.zIndex=350;
+ // Leaflet's default overlay pane (400) continues to hold land cover and boundaries.
  // Base maps: the imagery is beneath all FIRE-V vegetation, fire and land-cover overlays.
  const streetMap=L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
-   maxZoom:19,
+   pane:"firev-basemap",maxZoom:19,
    attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
  });
  const satelliteMap=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{
-   maxZoom:19,
+   pane:"firev-basemap",maxZoom:19,
    attribution:'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community'
  });
  streetMap.addTo(map); // Keep the existing street map as the default.
@@ -161,7 +165,7 @@ async function start(){if(typeof L==="undefined")throw Error("Leaflet is unavail
    collapsed:true,position:"topright"
  }).addTo(map);
  studyBounds=L.latLngBounds([]);cfg.layers.filter(x=>x.id.startsWith("ndvi_")).forEach(item=>studyBounds.extend(item.bounds));
- cfg.layers.forEach(item=>{tiles[item.id]=L.tileLayer(item.url,{bounds:item.bounds,minZoom:item.minZoom,maxNativeZoom:item.maxZoom,maxZoom:17,opacity:st.opacity})});
+ cfg.layers.forEach(item=>{tiles[item.id]=L.tileLayer(item.url,{pane:"firev-indices",bounds:item.bounds,minZoom:item.minZoom,maxNativeZoom:item.maxZoom,maxZoom:17,opacity:st.opacity})});
  map.fitBounds(studyBounds.pad(.03));$("fit-view").onclick=()=>map.fitBounds(studyBounds.pad(.03));
  fireControl();landcoverControl();drawTimeline();await loadOutlines();await loadSettlements();
  try{await loadClickGrid()}catch(err){console.warn("Click lookup unavailable:",err);error("Click-to-inspect is unavailable; other maps still work.")}
