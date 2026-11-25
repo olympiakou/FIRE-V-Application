@@ -147,7 +147,19 @@ async function start(){if(typeof L==="undefined")throw Error("Leaflet is unavail
  const response=await fetch("data/layers.json",{cache:"no-store"});if(!response.ok)throw Error("Missing layers.json; run Script 08 v3 first");
  cfg=await response.json();cfg.layers.forEach(layer=>meta[layer.id]=layer);
  map=L.map("map",{minZoom:9,maxZoom:17,zoomControl:false});L.control.zoom({position:"topright"}).addTo(map);
- L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:19,attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+ // Base maps: the imagery is beneath all FIRE-V vegetation, fire and land-cover overlays.
+ const streetMap=L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{
+   maxZoom:19,
+   attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+ });
+ const satelliteMap=L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",{
+   maxZoom:19,
+   attribution:'Tiles © Esri — Source: Esri, Maxar, Earthstar Geographics, and the GIS User Community'
+ });
+ streetMap.addTo(map); // Keep the existing street map as the default.
+ L.control.layers({"Street Map":streetMap,"Satellite":satelliteMap},null,{
+   collapsed:true,position:"topright"
+ }).addTo(map);
  studyBounds=L.latLngBounds([]);cfg.layers.filter(x=>x.id.startsWith("ndvi_")).forEach(item=>studyBounds.extend(item.bounds));
  cfg.layers.forEach(item=>{tiles[item.id]=L.tileLayer(item.url,{bounds:item.bounds,minZoom:item.minZoom,maxNativeZoom:item.maxZoom,maxZoom:17,opacity:st.opacity})});
  map.fitBounds(studyBounds.pad(.03));$("fit-view").onclick=()=>map.fitBounds(studyBounds.pad(.03));
